@@ -488,6 +488,7 @@ class ticketController {
     async getTicketRepliesByTicketId(req, res, next) {
         try {
             const { ticketId, companyId } = req.params;
+            console.log("ticketId",ticketId); 
 
             // Date formatting helper
             const formatDate = (date) => {
