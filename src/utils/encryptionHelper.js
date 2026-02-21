@@ -10,6 +10,7 @@ const iv = Buffer.from(ENC_DEC_SECRET.slice(0, 16), 'utf8');
 function jsencode_api(data) {
     try {
         const cipher = crypto.createCipheriv(ENC_DEC_METHOD, key, iv);
+        console.log("cipher",cipher);
         let encrypted = cipher.update(data, 'utf8', 'base64');
         encrypted += cipher.final('base64');
         return encrypted;
