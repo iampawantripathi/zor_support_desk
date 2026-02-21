@@ -1,0 +1,42 @@
+{
+  "name": "rest-apis",
+  "version": "1.0.0",
+  "description": "Rest apis ",
+  "main": "node server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "start:dev": "nodemon src/server.js",
+    "start:prod": "npm run build && node build/server.js",
+    "build": "npm run build",
+    "start:multi": "node cluster.js"
+  },
+  "keywords": [
+    "node",
+    "express"
+  ],
+  "author": "Pawan Tripathi",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "celebrate": "^15.0.1",
+    "cluster": "^0.7.7",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dayjs": "^1.11.13",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "mongodb": "^5.2.0",
+    "mongoose": "^7.0.3",
+    "multer": "^2.0.1",
+    "os": "^0.1.2",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/sequelize": "^4.28.14",
+    "nodemon": "^3.0.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
